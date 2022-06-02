@@ -1,0 +1,20 @@
+app:
+  build: .
+  container_name: web_crawler_flask
+  command: python -u ./app/app.py
+  ports:
+    - "5000:5000"
+  volumes:
+    - .:/app
+  links:
+    - db
+db:
+  image: mongo:latest
+  hostname: mongodb
+  container_name: mongodb
+  environment:
+    - MONGO_INITDB_DATABASE=links_db
+    - MONGO_INITDB_ROOT_USERNAME=root
+    - MONGO_INITDB_ROOT_PASSWORD=pass
+  ports:
+    - 27017:27017
