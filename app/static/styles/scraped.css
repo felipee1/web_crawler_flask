@@ -1,0 +1,60 @@
+.form input[type="submit"] {
+    background: #ef3f5a;
+    border: 1px solid #ef3f5a;
+    color: #fff;
+    padding: 0 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    height: 50px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background: url('https://source.unsplash.com/G8rRItjrwkA') fixed;
+    background-size: cover;
+    color: #0a0a0b;
+  }
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 1.5rem;
+    text-align: center;
+    background-color: #FFF;
+  }
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 1.5rem;
+    text-align: center;
+}
+h4
+{
+    
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 1.5rem;
+    text-align: center;
+}
+a {
+    background-color: #FFF;
+}
+h5 {    
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 1.5rem;
+    text-align: center;
+}
+li {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 5px;
+    background-color: #FFF;
+}
+form {
+        text-align: center;
+}

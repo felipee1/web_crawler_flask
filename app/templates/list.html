@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/list.css') }}">
+    <form class="form"  action="/">
+        <input id="submitbutton" type="submit" value="HOME"/>
+    </form>
+    <body>
+        <hr class="solid">
+        <h1>List of scraped websites</h1>
+        {% for link in string %}
+            <hr class="solid">
+            <h2><a href={{link.name}}>{{link.name}}</a></h2>
+            <hr class="solid">
+            <ul>
+                <h4>Extracted links</h4>
+                {% for item in link.list_links %}
+                    <li> <a href={{item}}>{{item}}</a></li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </body>
+</html>

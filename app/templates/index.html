@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+    <body>
+        <div class="container">
+            <div class="cover">
+                <h1>Link web crawler</h1>
+                <form  class="flex-form" method="post" action="/scrape">
+                    <input type="search" name="url" placeholder="insert your URL">
+                    <input type="submit" value="Scrape">
+                </form>
+                <h7>some websites with a lot of links can take some extra time</h7>
+                <br>
+                <h1>Click in the button to list all crawled websites</h1>
+                <form  class="form" action="/list">
+                    <input type="submit" value="Go to list">
+                </form>
+                <div id="madeby">
+                    <span>
+                    Photo by <a href="https://unsplash.com/@benblenner" target="_blank">Ben Blennerhassett</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/scraped.css') }}">
+    <form id="input-form" class="form"  action="/">
+        <input id="submitbutton" type="submit" value="HOME"/>
+    </form>
+    <hr class="solid">
+    <body>
+        <h4>Inside the website <a href= {{url}}>{{url}}</a> have the follow links</h2>
+        <hr class="solid">
+        <h5>If you want see the list of all scraped webstes click in  the buton below</h5>
+        <form id="input-form" class="form" action="/list">
+            <input id="submitbutton" type="submit" value="Go to list"/>
+        </form>
+        <hr class="solid">
+        <h3>list of links</h2>
+            {% for link in string %}
+            <hr class="solid">
+            <h2><a href={{link.name}}>{{link.name}}</a></h2>
+            <hr class="solid">
+                <h4>Extracted links</h4>
+                {% for item in link.list_links %}
+                    <li> <a href={{item}}>{{item}}</a></li>
+                {% endfor %}
+        {% endfor %}
+    </body>
+</html>
