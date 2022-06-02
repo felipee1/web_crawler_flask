@@ -1,7 +1,7 @@
 # flask_mongodb_dockerized_crawler
 
 ## Description
-This code is for scrap links from a url using scrappy and Flask + MongoDB with docker.
+This code is for scrape links from a url using scrappy and Flask + MongoDB with docker.
 
 ## Environment
 
